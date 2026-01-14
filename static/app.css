@@ -1,0 +1,125 @@
+/* Background */
+.bg {
+    background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px) brightness(0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+}
+
+/* Page Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Title */
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Card (Glassmorphism) */
+.glass {
+    width: 420px;
+    padding: 25px 35px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h2 {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.85);
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+.button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.25s;
+}
+.button:hover {
+    background: #45a049;
+    transform: scale(1.03);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 22px;
+    padding: 15px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 10px;
+    min-height: 40px;
+}
+
+/* BHK & Bathroom Toggle Buttons */
+.switch-field {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    background: rgba(255,255,255,0.7);
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48px;
+    text-align: center;
+    transition: 0.25s;
+    font-weight: 500;
+}
+
+.switch-field input:checked + label {
+    background: #4CAF50;
+    color: #fff;
+    transform: scale(1.05);
+}
