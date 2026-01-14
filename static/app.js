@@ -18,7 +18,7 @@ function getBHKValue() {
     return -1;
 }
 
-const baseURL = "https://bangalore-home-price-predictor-3-0xe1.onrender.com/";
+const baseURL = "";
 
 
 async function onClickedEstimatePrice() {
@@ -67,4 +67,5 @@ async function onPageLoad() {
 }
 
 window.onload = onPageLoad;
+
 
